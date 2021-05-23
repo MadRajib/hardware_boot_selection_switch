@@ -36,7 +36,7 @@ static bool ejected = false;
 // We will use Flash as read-only disk with board that has
 // CFG_EXAMPLE_MSC_READONLY defined
 
-#define README_CONTENTS \
+#define SWITCH_CFG_CONTENTS \
 "set os_hw_switch=0\n"
 
 enum
@@ -111,11 +111,11 @@ uint8_t msc_disk[DISK_BLOCK_NUM][DISK_BLOCK_SIZE] =
       // second entry is readme file
       's' , 'w' , 'i' , 't' , 'c' , 'h' ,' ' , ' ' , 'c' , 'f' , 'g' , 0x20, 0x00, 0xC6, 0x52, 0x6D,
       0x65, 0x43, 0x65, 0x43, 0x00, 0x00, 0x88, 0x6D, 0x65, 0x43, 0x02, 0x00,
-      sizeof(README_CONTENTS)-1, 0x00, 0x00, 0x00 // readme's files size (4 Bytes)
+      sizeof(SWITCH_CFG_CONTENTS)-1, 0x00, 0x00, 0x00 // readme's files size (4 Bytes)
   },
 
   //------------- Block3: Readme Content -------------//
-  README_CONTENTS
+  SWITCH_CFG_CONTENTS
 };
 
 /**
