@@ -1,6 +1,7 @@
 # Hardware Boot Selection Switch Using Raspberry Pi PICO
 
 Inspired by Hackaday.io project(https://hackaday.io/project/179539-hardware-boot-selection-switch)
+Check Steps in Hackster.io: https://www.hackster.io/Madrajib/hardware-boot-select-switch-using-pico-a3e3d5
 
 ### make the project
 ```bash
